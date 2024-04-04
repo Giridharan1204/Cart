@@ -1,0 +1,23 @@
+
+<div *ngIf="cartItems.length > 0; else noProducts">
+    <div *ngFor="let item of cartItems; let i = index">
+      <h2>{{ item.name }}</h2>
+      <img [src]="'assets/' + item.image" alt="{{ item.name }}">
+      <p>Price: ${{ item.price }}</p>
+      <p>Quantity:
+        <button (click)="adjustQuantity(item, false)">-</button>
+        {{ item.quantity }}
+        <button (click)="adjustQuantity(item, true)">+</button>
+      </p>
+      <button (click)="removeProduct(i)">Remove</button>
+
+    </div>
+    <p>Order Total: ${{ orderTotal }}</p>
+    <!-- Add estimated delivery date if necessary -->
+    <button (click)="checkout()">Checkout </button>
+</div>
+  
+  <ng-template #noProducts>
+    <p>No product added</p>
+  </ng-template>
+  

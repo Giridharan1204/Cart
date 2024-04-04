@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Almonds",
+      "image": "product1.jpg",
+      "weight": "100g",
+      "price": 10.99
+    },
+    {
+      "name": "Pista",
+      "image": "product2.webp",
+      "weight": "200g",
+      "price": 15.99
+    },
+    {
+      "name": "Cashew",
+      "image": "product3.jpg",
+      "weight": "150g",
+      "price": 12.49
+    },
+    {
+      "name": "Walnut",
+      "image": "product4.jpg",
+      "weight": "120g",
+      "price": 9.99
+    }
+  ]
+  
